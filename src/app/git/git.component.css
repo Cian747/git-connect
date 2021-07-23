@@ -1,3 +1,16 @@
 #field{
     padding: 30px;
 }
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.card{
+    background-color:ghostwhite;
+    color:black;
+    margin:5px;
+    /* padding:5px; */
+
+}

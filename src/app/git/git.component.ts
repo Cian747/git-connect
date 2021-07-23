@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user-service/user.service';
 import { User } from '../user';
+import { Repoview } from '../models/repoview';
 
 @Component({
   selector: 'app-git',
@@ -10,36 +11,49 @@ import { User } from '../user';
 export class GitComponent implements OnInit {
 
   users!: User;
-
+  repos!: Repoview[];
 
   searchResults(input: string) {
-
-
     if (input) {
       console.log(input);
       this.service.getUser(input).toPromise().then((response: any) => {
         console.log(response);
         // this.users.push(response);
-        this.users = new User(response.id, response.login, response.avatar_url, response.html_url, response.repos_url)
+        this.users = new User(response.id, response.login, response.name, response.bio, new Date(response.date),response.location, response.avatar_url, response.followers, response.html_url, response.repos_url)
       })
-
-      // this.service.getUserRepo(input)
-      // console.log(this.service.getUserRepo(input))
     };
   }
 
-
+  //  To get users repos
   searchRepos(input: string) {
     if (input) {
       console.log(input);
       this.service.getUserRepo(input).toPromise().then((response: any) => {
         console.log(response);
+        this.repos = response;
       })
     }
   }
+
   constructor(private service: UserService) { }
 
   ngOnInit(): void {
+    let promise = new Promise((resolve, reject) => {
+      this.service.getUser('Cian747').toPromise().then((response: any) => {
+        this.users = response;
+
+      });
+      this.service.getUserRepo('Cian747').subscribe(response => {
+        console.log(response);
+        // this.repos = new Repoview(response.name.response.id,response.full_name);
+      });
+
+    });
+
   }
 
+
+
 }
+
+

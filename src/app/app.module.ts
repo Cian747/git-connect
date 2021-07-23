@@ -5,11 +5,13 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitComponent } from './git/git.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GitComponent
+    GitComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

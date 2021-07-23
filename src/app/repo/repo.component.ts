@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import{ UserService } from '../user-service/user.service'
+import { Repoview } from '../models/repoview';
 
 @Component({
   selector: 'app-repo',
@@ -7,7 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepoComponent implements OnInit {
 
-  constructor() { }
+  repos!:Repoview[];
+
+
+  localRepos(input: string) {
+    if(input) {
+      console.log(input);
+      this.services.getUserRepo(input).toPromise().then((response: any) => {
+        console.log(response);
+        this.repos = response;
+      })
+    }
+  }
+
+  constructor(private services:UserService) { }
 
   ngOnInit(): void {
   }

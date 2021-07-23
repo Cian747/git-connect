@@ -5,7 +5,9 @@ import { RepoComponent } from './repo/repo.component';
 
 const routes: Routes = [
   {path: 'git', component:GitComponent},
-  {path: 'repo', component:RepoComponent}
+  {path: 'repo', component:RepoComponent},
+  {path: '', redirectTo:"git", pathMatch:"full"},
+
 ];
 
 @NgModule({

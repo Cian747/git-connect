@@ -1,4 +1,5 @@
 <div class="container">
+  <!-- <ng-progress></ng-progress> -->
   <div id="welcome">
     <div class="">
 
@@ -8,14 +9,14 @@
         (keyup.enter)='searchRepos(inputField.value)' (keyup.enter)='searchResults(inputField.value)' #inputField
         placeholder="Enter username or repo name" aria-label="Recipient's username" aria-describedby="button-addon2">
       <button class="btn btn-outline-secondary" type="button" id="button-addon2"
-        (click))='searchRepos(inputField.value)' (click)='searchResults(inputField.value)'>Search</button>
+        (click)='searchRepos(inputField.value)' (click)='searchResults(inputField.value)'>Search</button>
     </div>
   </div>
 
 
   <div class="card mb-10" style="max-width: 540px;">
     <div class="row g-0">
-      <div class="col-md-4">
+      <div class="col">
         <img src="{{users.avatar_url}}" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
@@ -23,7 +24,7 @@
           <h5 class="card-title">{{users.name}}</h5>
           <p class="card-text">Username:{{users.login}}</p>
           <p class="card-text">Bio:{{users.bio}}</p>
-          <p class="card-text">Created on:{{users.created_at| date}}</p>
+          <p class="card-text">Created on:{{users.created_at | date}}</p>
           <p class="card-text">Location:{{users.location}}</p>
           <p class="card-text"><small class="text-muted">Followers:{{users.followers}}</small></p>
         </div>

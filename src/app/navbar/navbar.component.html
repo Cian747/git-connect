@@ -1,12 +1,15 @@
 <nav class="navbar navbar-light bg-dark" style="color:white;">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" routerLink="git" href="#">
         <i class="fas fa-binoculars"></i>
         Git-Connect 
       </a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="git" routerLinkActive='active' href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="repo" routerLinkActive='active' href="">Search Repositories</a>
         </li>
       </ul>
     </div>

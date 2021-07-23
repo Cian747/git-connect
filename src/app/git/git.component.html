@@ -1,13 +1,20 @@
 <div class="container">
 <div class="input-group mb-3" id="field">
-    <input type="text" class="form-control" name="inputField" id="inputField" (keyup.enter)='searchResults(inputField.value)' #inputField  placeholder="Enter username or repo name" aria-label="Recipient's username" aria-describedby="button-addon2">
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)='searchResults(inputField.value)'>Search</button>
+    <input type="text" class="form-control" name="inputField" id="inputField" (keyup.enter)='searchRepos(inputField.value)'  (keyup.enter)='searchResults(inputField.value)' #inputField  placeholder="Enter username or repo name" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click))='searchRepos(inputField.value)' (click)='searchResults(inputField.value)'>Search</button>
   </div>
 </div>  
 
 <div class="user-info">
     <div class="row">
         <div class="col-md-4">
+            <img src="{{users.avatar_url}}" alt="">
+            <ul>
+                <li>{{users.id}}</li>
+                <li>{{users.login}}</li>
+                <li>{{users.html_url}}</li>
+                <li>{{users.repos_url}}</li>
+            </ul>
             <a href=""></a>
         </div>
 

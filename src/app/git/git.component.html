@@ -1,20 +1,23 @@
-<div class="container">
+<div class="container-fluid">
   <!-- <ng-progress></ng-progress> -->
   <div id="welcome">
-    <div class="">
-
+    <div class="header">
+      <h1>Git-Connect</h1>
+      <hr>
+      <h3>Welcome to Git-Connect</h3>
+      <p>Here you get to search for your user-name and repository</p>
     </div>
     <div class="input-group mb-3" id="field">
       <input type="text" class="form-control" name="inputField" id="inputField"
         (keyup.enter)='searchRepos(inputField.value)' (keyup.enter)='searchResults(inputField.value)' #inputField
         placeholder="Enter username or repo name" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+      <button class="btn btn-outline-success" type="button" id="button-addon2"
         (click)='searchRepos(inputField.value)' (click)='searchResults(inputField.value)'>Search</button>
     </div>
   </div>
 
 
-  <div class="card mb-10" style="max-width: 540px;">
+  <div class="card border-light mb-10" style="max-width: 800px;">
     <div class="row g-0">
       <div class="col">
         <img src="{{users.avatar_url}}" class="img-fluid rounded-start" alt="...">
@@ -41,13 +44,17 @@
           {{repo.name}}
         </div>
         <div class="card-body">
+          <p class="card-text">{{repo.description}}</p>
           <blockquote class="blockquote mb-0">
             <p>ID: {{repo.id}}</p>
             <footer class="blockquote-footer">{{repo.full_name}}<cite title="Source Title">.</cite></footer>
           </blockquote>
+          <!-- <button class="btn btn-link"><a href="{{repo.html_url}}"></a>See the code</button> -->
         </div>
       </div>
     </div>
   </div>
+
+  <footer></footer>
 
 </div>

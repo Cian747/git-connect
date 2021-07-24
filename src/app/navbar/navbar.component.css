@@ -1,4 +1,9 @@
-a{
-    font-size:20px;
+#icon{
+    font-size:30px;
+    color: white;
+}
+
+a:hover{
+    border-bottom: 5px solid whitesmoke;
     color: white;
 }

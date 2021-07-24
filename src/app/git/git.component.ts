@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user-service/user.service';
-import { User } from '../models/user';
-import { Repoview } from '../models/repoview';
+import { User } from '../user-class/user';
+import { Repoview } from '../repo-class/repoview';
 
 @Component({
   selector: 'app-git',

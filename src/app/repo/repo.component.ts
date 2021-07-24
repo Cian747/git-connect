@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{ UserService } from '../user-service/user.service'
-import { Repoview } from '../models/repoview';
+import { Repoview } from '../repo-class/repoview';
 
 @Component({
   selector: 'app-repo',

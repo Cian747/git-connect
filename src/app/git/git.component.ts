@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user-service/user.service';
-import { User } from '../user';
+import { User } from '../models/user';
 import { Repoview } from '../models/repoview';
 
 @Component({

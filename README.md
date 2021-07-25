@@ -41,4 +41,4 @@ Reach out to me on sean12ka@gmail.com
 ### License
 [MIT LICENSE](https://github.com/Cian747/git-connect/commit/61130c61656b8e18865f0f71c2d61fdee62a5082)
 
-Copyright (c) 2021 **{List of contributors or company name}**
+Copyright (c) 2021 **CIAN**

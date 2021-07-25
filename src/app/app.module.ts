@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { GitComponent } from './git/git.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RepoComponent } from './repo/repo.component';
-import { UserComponent } from './user/user.component';
+import { DateCountPipe } from './pipe/date-count.pipe';
+import { HighlightDirective } from './directive/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,14 @@ import { UserComponent } from './user/user.component';
     GitComponent,
     NavbarComponent,
     RepoComponent,
-    UserComponent
+    DateCountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

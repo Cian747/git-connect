@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { GitComponent } from './git/git.component';
 import { RepoComponent } from './repo/repo.component';
 
-const routes: Routes = [
+const appRoutes = [
   {path: 'git', component:GitComponent},
   {path: 'repo', component:RepoComponent},
   {path: '', redirectTo:"git", pathMatch:"full"},
@@ -11,7 +11,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

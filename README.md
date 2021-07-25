@@ -1,3 +1,8 @@
+# GIT-CONNECT
+#### Search for your username and repositories, 2021
+#### By **[CIAN](https://github.com/Cian747)**
+## Description
+Git-Connect was developed to help github user search and quickly access there repos and track the growth of their projects. 
 # GitConnect
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
@@ -25,3 +30,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Technologies Used
+* HTML
+* CSS
+* TypeScript
+* Angular
+## Support and contact details
+Reach out to me on sean12ka@gmail.com
+### License
+[MIT LICENSE](https://github.com/Cian747/git-connect/commit/61130c61656b8e18865f0f71c2d61fdee62a5082)
+
+Copyright (c) 2021 **{List of contributors or company name}**

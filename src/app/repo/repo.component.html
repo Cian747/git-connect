@@ -1,8 +1,8 @@
 <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Git username" name="repoSearch" #repoSearch id="repoSearch" (keyup.enter)="localRepos(repoSearch.value)" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" (click)="localRepos(repoSearch.value)" type="button" id="button-addon2">Button</button>
+            <input type="text" class="form-control" placeholder="Git username/language" name="repoSearch" #repoSearch id="repoSearch" (keyup.enter)="localRepos(repoSearch.value)" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" (click)="localRepos(repoSearch.value)" type="button" id="button-addon2">Search</button>
           </div>
     </div>
   </nav>
@@ -10,13 +10,13 @@
 
 <div class="row">
     <div class="col-md-3" *ngFor='let repo of repos'>
-      <div class="card">
+      <div class="card" appHighlight>
         <div class="card-header">
           {{repo.name}}
         </div>
         <div class="card-body">
           <blockquote class="blockquote mb-0">
-            <p>ID: {{repo.id}}</p>
+            <p>created: {{repo.created_at | date}}</p>
             <p>forks: {{repo.forks}}</p>
             <footer class="blockquote-footer">{{repo.full_name}}<cite title="Source Title">.</cite></footer>
           </blockquote>

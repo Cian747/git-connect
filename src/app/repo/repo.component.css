@@ -1,0 +1,14 @@
+.card{
+    /* background-image: url(https://images.unsplash.com/photo-1626799943012-56616b7c3914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=506&q=80); */
+    background-size: cover;
+    margin: 5px;
+    padding: 5px;
+    color: #000;
+    font-size: 15px;
+    line-height: 1;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover{
+    filter:drop-shadow(8px 8px 10px rgb(19, 19, 19));
+}

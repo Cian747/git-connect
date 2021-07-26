@@ -15,9 +15,9 @@ export class RepoComponent implements OnInit {
   localRepos(input: string) {
     if(input) {
       console.log(input);
-      this.services.getUserRepo(input).toPromise().then((response: any) => {
+      this.services.findRepos(input).toPromise().then((response: any) => {
         console.log(response);
-        this.repos = response;
+        this.repos = response.items;
       })
     }
   }

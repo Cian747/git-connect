@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Git username/language" name="repoSearch" #repoSearch id="repoSearch" (keyup.enter)="localRepos(repoSearch.value)" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input type="text" class="form-control" placeholder="Enter repo" name="repoSearch" #repoSearch id="repoSearch" (keyup.enter)="localRepos(repoSearch.value)" aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary" (click)="localRepos(repoSearch.value)" type="button" id="button-addon2">Search</button>
           </div>
     </div>

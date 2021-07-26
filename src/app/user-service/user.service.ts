@@ -16,11 +16,15 @@ export class UserService {
 
     }
     return this.http.get(`https://api.github.com/users/${input}`);
-    // `https://api.github.com/users/kiman121`
   };
 
   getUserRepo(input: string) {
     return this.http.get(`https://api.github.com/users/${input}/repos`);
+  }
+
+  findRepos(input: string){
+    return this.http.get(`https://api.github.com/search/repositories?q=${input}`);
+
   }
 }
 

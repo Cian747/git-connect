@@ -18,14 +18,18 @@ a{
     background-color:ghostwhite;
     color:black;
     margin:5px;
-    /* padding:5px; */
     height:auto;
-    /* width:100%; */
+    width:100%;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 img{
     border-radius: 10px;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
 }
 
 .card:hover{
@@ -35,5 +39,16 @@ img{
 #field{
     padding: 40px;
     background-color:darkslategrey;
-    /* color: ; */
+    /* color:; */
+}
+
+#footer{
+    background-color:slategray;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#footer button{
+    margin: 1rem;
 }

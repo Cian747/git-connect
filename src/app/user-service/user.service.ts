@@ -15,11 +15,12 @@ export class UserService {
       avatar_url: string;
 
     }
-    return this.http.get(`https://api.github.com/users/${input}?access_token=${environment.gitApiKey}`);
+    return this.http.get(`https://api.github.com/users/${input}`);
+    // `https://api.github.com/users/kiman121`
   };
 
   getUserRepo(input: string) {
-    return this.http.get(`https://api.github.com/users/${input}/repos?access_token=${environment.gitApiKey}`);
+    return this.http.get(`https://api.github.com/users/${input}/repos`);
   }
 }
 

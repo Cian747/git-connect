@@ -9,6 +9,7 @@ export class User {
         public avatar_url: string,
         public followers: number,
         public html_url: string,
-        public repos_url: string) { }
+        public repos_url: string
+        ) { }
 
 }

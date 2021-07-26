@@ -5,8 +5,11 @@
     margin: 0;
     padding: 0;
 }
-
-h1{
+body{
+    background-color:darkgray;
+    background-size: cover;
+}
+h1, h2,h3{
     font-family: 'Merienda', cursive;
 }
 

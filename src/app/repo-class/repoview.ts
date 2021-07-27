@@ -7,6 +7,7 @@ export class Repoview {
         public forks: number,
         public description: string,
         public created_at: Date,
-        public html_url: string
+        public html_url: string,
+        public total_count:number,
         ) { }
 }
